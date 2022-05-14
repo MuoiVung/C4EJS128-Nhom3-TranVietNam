@@ -1,7 +1,7 @@
 'use strict';
 
 const app = function () {
-    const time = parseInt(prompt('Nhập vào số giây: '));
+    const time = parseFloat(prompt('Nhập vào số giây: '));
     if (typeof time === 'number' && !isNaN(time)) {
         const hour = Math.floor(time / 3600);
         const minute = Math.floor((time % 3600) / 60);
