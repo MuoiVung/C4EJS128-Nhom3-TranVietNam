@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #16BFFD, #CB3066);
+    font-family: 'Roboto', sans-serif;
+}
+
+#clock {
+    width: 70%;
+    max-width: 100%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock-item {
+    width: 23%;
+    padding: 2rem 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.clock-content {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.clock-name {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
