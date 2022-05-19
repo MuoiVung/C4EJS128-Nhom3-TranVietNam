@@ -30,7 +30,12 @@ const calculate = function (symbol, num1, num2) {
             result = value1 * value2;
             break;
         case '/':
-            result = (value1 / value2).toFixed(10);
+            result = (value1 / value2);
+            const resultAbs = Math.abs(result);
+            const decimal = resultAbs - Math.floor(resultAbs);
+            if (decimal.toString().length > 10) {
+                result = result.toFixed(10);
+            }
             break;
         case '%':
             result = value1 % value2;
