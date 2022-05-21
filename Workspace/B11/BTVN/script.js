@@ -105,10 +105,12 @@ keyboard.addEventListener('click', function (e) {
                 }
                 break;
             case '=':
-                result.innerHTML = calculate(symbol.innerHTML, num1.innerHTML, num2.innerHTML);
-                finishCalc = true;
-                isNum2 = false;
-                equal.innerHTML = '=';
+                if (num1.innerHTML !== '' && !num2.innerHTML !== '') {
+                    result.innerHTML = calculate(symbol.innerHTML, num1.innerHTML, num2.innerHTML);
+                    finishCalc = true;
+                    isNum2 = false;
+                    equal.innerHTML = '=';
+                }
                 break;
             case 'AC':
                 resetAll();
